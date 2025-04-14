@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes slideGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #000000, #4b0082, #0000ff, #000000);
+  background-size: 400% 100%;
+  animation: slideGradient 30s linear infinite;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  background-color: #111;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border: 3px solid #fff;
+  max-width: 1200px;
+}
+
+.left {
+  width: 50%;
+  background-color: #222;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.bottom-content {
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border: 3px solid #fff;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-side {
+  flex: 1;
+  color: white;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+  }
+}
+
+.video-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+}
+
+.text-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 50px;
+  }
+}
+
+.subsection {
+  margin-bottom: 50px;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #6b29bc;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.new-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.new-title {
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  margin: 15px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+}
+
+.image-description {
+  font-size: 1.125rem;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.third-container {
+  display: flex;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border: 3px solid #fff;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-side {
+  width: 50%;
+
+  img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+.text-side {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.section-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}

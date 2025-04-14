@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes slideGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+body {
+  background: linear-gradient(90deg, #000000, #4b0082, #0000ff, #000000);
+  background-size: 400% 100%;
+  animation: slideGradient 30s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.musique-carousel {
+  width: 90%;
+  max-width: 1400px;
+  border-radius: 12px;
+  border: 3px solid white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.carousel-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.image-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-fixed {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel {
+  flex: 1.5;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.carousel-item h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-item .description {
+  font-size: 1.6rem;
+  margin-top: 40px;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 15px;
+  cursor: pointer;
+  z-index: 10;
+  pointer-events: all;
+  border-radius: 20px;
+}/*# sourceMappingURL=musique.css.map */
